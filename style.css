@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+.mast {
+  height: 100vh;
+  background-image: url("images/image-1.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 0.8s;
+}
+
+.mast nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7%;
+}
+
+.logo {
+  width: 320px;
+  cursor: pointer;
+}
+
+.mast nav ul {
+  list-style: none;
+}
+
+.mast nav ul li {
+  display: inline;
+  margin-right: 30px;
+  color: white;
+}
+
+.mast nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.mast nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav .btn {
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+}
+
+nav .btn:hover {
+  color: black;
+  background: white;
+}
+
+.info {
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  padding: 0 7%;
+}
+
+.line {
+  flex: 1;
+  background: white;
+  height: 2px;
+  margin-top: 22px;
+}
+
+.info div {
+  margin-right: 40px;
+}
+
+.info div h2 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.05em;
+}
+
+.info div p {
+  color: #bbb;
+  font-weight: 300;
+}
+
+.info div:nth-child(1) {
+  width: 100px;
+}
+
+.info div:nth-child(2) {
+  width: 190px;
+}
+
+.info div:nth-child(3) {
+  width: 210px;
+}
+
+/* Styles for Features Section */
+
+.features {
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.features-header {
+  max-width: 1120px;
+  color: white;
+  margin: auto;
+  padding: 80px 1em;
+}
+
+.features-header h2 {
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.features-header p {
+  max-width: 800px;
+  font-weight: 300;
+}
+
+.features-row {
+  max-width: 1120px;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.features-row > div {
+  /* width: 100%; */
+  flex: 1 0 240px;
+}
+
+.features-row img {
+  width: 100%;
+}
+
+.feature-desc {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+@media (max-width: 980px) {
+  .feature-desc {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.feature-desc h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-desc p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Performance Specs Banner */
+
+.perf-banner {
+  height: 460px;
+  position: relative;
+  color: white;
+  background-color: black;
+}
+
+.perf-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.perf-banner-specs-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.perf-banner-specs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: auto;
+  padding: 0 30px 50px;
+}
+
+p.measurement {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+p.spec {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.ludicrous {
+  width: 80%;
+  margin: auto;
+  padding: 50px 1em;
+  display: flex;
+}
+
+.ludicrous > div {
+  padding: 1em;
+}
+
+.beyond-ludicrous {
+  flex-basis: 40%;
+}
+
+.ludicrous-desc {
+  flex-basis: 60%;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.beyond-ludicrous p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.beyond-ludicrous h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.beyond-ludicrous a {
+  color: black;
+  text-transform: uppercase;
+  border: 3px solid black;
+  padding: 6px 60px;
+  border-radius: 50px;
+  margin-top: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  transition: background-color 0.4s;
+}
+
+.beyond-ludicrous a:hover {
+  background-color: black;
+  color: white;
+}
+
+.ludicrous-desc-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .ludicrous {
+    display: block;
+    width: 95%;
+  }
+
+  p.ludicrous-desc-mobile {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ludicrous-desc {
+    display: none;
+  }
+}
